@@ -1,21 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { SzablonComponent } from './pages/szablon/szablon.component';
-
-
+import { AppComponent } from "./app.component";
+import { SzablonComponent } from "./pages/szablon/szablon.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SzablonComponent,
-   
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, SzablonComponent],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
