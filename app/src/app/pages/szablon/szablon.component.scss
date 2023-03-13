@@ -1,0 +1,132 @@
+.cell {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 50px;
+ height: 50px;
+ border: solid 2px black;
+
+  .circle {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+  }
+
+  .circle:hover {
+   opacity: .5;
+  }
+  
+}
+
+#circle-1{
+ background-color: red !important;
+}
+
+ #circle-2{
+  background-color: lime !important;
+ }
+
+ #circle-3{
+  background-color: yellow !important;
+ }
+
+ #circle-4{
+  background-color: brown !important;
+ }
+
+ #circle-5{
+  background-color: blue !important;
+ }
+
+ #circle-6{
+  background-color: orange !important;
+ }
+
+ #circle-7{
+  background-color: pink !important;
+ }
+
+ #circle-8{
+  background-color: gray !important;
+ }
+
+ #board {
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  display: inline-flex;
+  width: 400px;
+  height: 580px;
+  border-radius: 3%;
+  background-color: black;
+
+  #board_first {
+   width: 250px;
+
+   .row {
+    display: flex;
+
+    .col-3 {
+     width: 40px;
+     height: 40px;
+     margin: 8px;
+     border-radius: 50%;
+     background-color: aliceblue;
+     opacity: .9;
+    }  
+   }
+  }
+
+  #board_second {
+   width: 150px;
+
+   .row {
+   display: flex;
+   
+   .col-3 {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 35px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    opacity: 0.9;}
+    
+     #result-1 /*nietrafione*/{
+      background-color: aqua;
+    }
+     #result-2 /*zła pozycja*/ {
+      background-color: rgb(87, 152, 152);
+    }
+    #result-3 /*idealnie trafione*/ {
+      background-color: rgb(18, 41, 41);
+    }
+    
+
+    }
+  } 
+
+  button {
+   position: absolute;
+   bottom: 0;
+   left: 30%;
+  }
+ 
+ }
+
+
+ button {
+  width: 70px;
+  height: 50px;
+  margin: 20px;
+  padding: 8px;
+  border-radius: 8px;
+ }
+
+h3 {
+  position: relative;
+  font-size: large;
+  color: red;
+}
+
+ 

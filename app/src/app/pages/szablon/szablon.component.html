@@ -1,0 +1,41 @@
+
+<h2>Mastermind</h2>
+
+{{p}}
+
+<div>
+ <div class="cell" *ngFor="let circle of arrayMainBalls">
+  <div id="circle-{{circle}}" class="circle" (click)="onSelectColor(circle)"></div>
+ </div>
+</div>
+
+
+<div id="board" *ngIf="hidValue">
+ <div id="board_first">
+ <div class="row " *ngFor="let row of gameBoard, let x = index">
+  <div class="col-3" 
+  *ngFor="let col of row, let y=index" [id]="col ? 'circle-'+col : null" (click)="onSelectCell(x, y)">
+ </div>
+ </div>
+ </div>
+ 
+
+ <div id="board_second">
+  <div class="row" *ngFor="let row of gameBoardResult">
+   <div class="col-3" 
+   *ngFor="let col of row" [id]="col ? 'result-'+col : null">
+  </div>
+  </div>
+  
+ </div>
+
+ <button (click)="onCheck()">Sprawdź</button>
+
+</div>
+
+
+
+<button (click)="startGame()">Nowa gra</button>
+
+
+<h3>{{p1}}</h3>
